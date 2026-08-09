@@ -29,11 +29,13 @@ int main() {
     vector<int> vec; // NOTE: How to define vector size
 
     // Different ways of initialization
-    auto m; // If you are not sure about the type of data get stored in the variable → configured during runtime (slow)
-    int n, o, p = (1, 2, 3); // Tuple Unpacking using `,` operator
-    int q = 0, int r = 1;
+    int n, o, p = (1, 2, 3); /* bug → only last variable get initialized to the last element */
     int s, t;
     s = t = 10;
+    /*
+        auto m; → auto must require defination
+        int q = 0, int r = 1; → error
+    */
 
     // Accessing the variables
     cout << a << endl;
