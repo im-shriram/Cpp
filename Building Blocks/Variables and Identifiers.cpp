@@ -37,6 +37,13 @@ int main() {
         int q = 0, int r = 1; → error
     */
 
+    /* Modern C++ Initialization */
+    int age(18.90); // Implicit type conversion → double to int
+    int roll_no{12.90}; // Strict type conversion → throws error
+    int *height = new int(21);
+    cout << "age and roll number → " << age << ' ' << roll_no << endl;
+    delete height; // maindatory for variables created in heap
+
     // Accessing the variables
     cout << a << endl;
 
