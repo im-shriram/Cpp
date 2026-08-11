@@ -1,3 +1,7 @@
+/*
+    when the object instance of the 'child class' is created, the constructor of the 'parent class' is executed first, followed by the constructor of the 'child class'. When the program terminates, the destructors are called in the reverse order.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
